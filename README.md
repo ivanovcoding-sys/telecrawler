@@ -25,18 +25,15 @@ building, or mapping cross-promotion networks between public channels.
 - A Telegram API ID/hash from [my.telegram.org](https://my.telegram.org)
 
 ## Setup
-
-\```bash
+git clone https://github.com/ivanovcoding-sys/telecrawler/tree/main
 pip install telethon
-\```
 
 Edit the config block in `crawler.py` (or better, load from environment variables):
 
-\```python
+python
 API_ID    = 123456          # your API ID (integer)
 API_HASH  = "your_api_hash" # your API hash (string)
 PHONE     = "+1234567890"   # your phone number
-\```
 
 ⚠️ **Do not commit real credentials.** Use environment variables or a `.env`
 file excluded via `.gitignore`.
